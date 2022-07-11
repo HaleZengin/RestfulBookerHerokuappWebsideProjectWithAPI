@@ -36,6 +36,8 @@ public class Q10_GetRequest_ResponseWithPojo2 extends RestfulBookerHerokuappUrl 
         Assert.assertEquals(expecteData.getLastname(), actualData.getLastname());
         Assert.assertEquals(expecteData.getTotalprice(), actualData.getTotalprice());
         Assert.assertEquals(expecteData.isDepositpaid(), actualData.isDepositpaid());
+        Assert.assertEquals(expecteData.getBookingdatesPojo2().getCheckin(), actualData.getBookingdatesPojo2().getCheckin());
+        Assert.assertEquals(expecteData.getBookingdatesPojo2().getCheckout(), actualData.getBookingdatesPojo2().getCheckout());
 
 
 
