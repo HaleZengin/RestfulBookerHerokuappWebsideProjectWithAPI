@@ -7,7 +7,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import pojos.GetRequestBookingdatesPojo2;
 import pojos.GetRequestIdPojo2;
-import pojos.GetrequestIdPojo;
 
 import static io.restassured.RestAssured.given;
 

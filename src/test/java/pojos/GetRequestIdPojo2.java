@@ -4,17 +4,16 @@ public class GetRequestIdPojo2 {
 
     /*
     {
-            "firstname": "Millie",
-            "lastname": "Mohr",
-            "totalprice": 1000,
-            "depositpaid": false,
-            "bookingdates": {
-                "checkin": "2022-03-22",
-                "checkout": "2023-04-18"
+    "firstname": "Millie",
+    "lastname": "Mohr",
+    "totalprice": 1000,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2022-03-22",
+        "checkout": "2023-04-18"
     }
-    }
-    */
-
+}
+     */
 
     private String firstname;
     private String lastname;
@@ -83,9 +82,6 @@ public class GetRequestIdPojo2 {
                 ", bookingdatesPojo2=" + bookingdatesPojo2 +
                 '}';
     }
+
+
 }
-
-
-
-
-
