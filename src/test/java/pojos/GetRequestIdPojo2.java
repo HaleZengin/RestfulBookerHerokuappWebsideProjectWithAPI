@@ -14,13 +14,13 @@ public class GetRequestIdPojo2 {
     }
     }
     */
+
+
     private String firstname;
     private String lastname;
     private int totalprice;
     private boolean depositpaid;
-    private GetRequestBookingdatesPojo2 bookingdates2;
-
-
+    private GetRequestBookingdatesPojo2 bookingdatesPojo2;
 
     public String getFirstname() {
         return firstname;
@@ -54,25 +54,24 @@ public class GetRequestIdPojo2 {
         this.depositpaid = depositpaid;
     }
 
-    public GetRequestBookingdatesPojo2 getBookingdates2() {
-        return bookingdates2;
+    public GetRequestBookingdatesPojo2 getBookingdatesPojo2() {
+        return bookingdatesPojo2;
     }
 
-    public void setBookingdates2(GetRequestBookingdatesPojo2 bookingdates2) {
-        this.bookingdates2 = bookingdates2;
+    public void setBookingdatesPojo2(GetRequestBookingdatesPojo2 bookingdatesPojo2) {
+        this.bookingdatesPojo2 = bookingdatesPojo2;
     }
 
     public GetRequestIdPojo2() {
     }
 
-    public GetRequestIdPojo2(String firstname, String lastname, int totalprice, boolean depositpaid, GetRequestBookingdatesPojo2 bookingdates2) {
+    public GetRequestIdPojo2(String firstname, String lastname, int totalprice, boolean depositpaid, GetRequestBookingdatesPojo2 bookingdatesPojo2) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.totalprice = totalprice;
         this.depositpaid = depositpaid;
-        this.bookingdates2 = bookingdates2;
+        this.bookingdatesPojo2 = bookingdatesPojo2;
     }
-
 
     @Override
     public String toString() {
@@ -81,10 +80,9 @@ public class GetRequestIdPojo2 {
                 ", lastname='" + lastname + '\'' +
                 ", totalprice=" + totalprice +
                 ", depositpaid=" + depositpaid +
-                ", bookingdates2=" + bookingdates2 +
+                ", bookingdatesPojo2=" + bookingdatesPojo2 +
                 '}';
     }
-
 }
 
 
