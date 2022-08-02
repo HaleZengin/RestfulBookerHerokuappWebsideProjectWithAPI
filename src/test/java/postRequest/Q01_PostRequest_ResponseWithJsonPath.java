@@ -11,7 +11,7 @@ import testDatas.HerOkuAppTestData;
 
 import static io.restassured.RestAssured.given;
 
-public class Q01_PostRequest_ResponseWithJsonObject extends RestfulBookerHerokuappUrl {
+public class Q01_PostRequest_ResponseWithJsonPath extends RestfulBookerHerokuappUrl {
 
     /*
     {
