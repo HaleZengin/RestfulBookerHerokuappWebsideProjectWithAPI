@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class Q09_GetRequest_ResponseWithPojo extends RestfulBookerHerokuappUrl {
 
-    // Q03' teki sorguyu pojo class kullanarak ile dogrulayin
+    // Q03' teki sorguyu pojo class kullanarak dogrulayin
 
     @Test
     public void test() {
