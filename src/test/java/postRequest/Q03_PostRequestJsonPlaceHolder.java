@@ -3,8 +3,11 @@ package postRequest;
 import baseUrl.JsonPlaceHolderUrl;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.junit.Assert;
 import org.junit.Test;
 import pojos.PostRequest_jsonplaceholderPojo;
+
+import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
 
@@ -31,6 +34,13 @@ public class Q03_PostRequestJsonPlaceHolder extends JsonPlaceHolderUrl {
         Response response = given().contentType(ContentType.JSON).spec(spec02).body(jsonplaceholderPojo).when().post("{param}");
 
         response.prettyPeek();
+
+        PostRequest_jsonplaceholderPojo actualData=response.as(PostRequest_jsonplaceholderPojo.class);
+
+        Assert.assertEquals(jsonplaceholderPojo.getTitle(), actualData.getTitle());
+        Assert.assertEquals(jsonplaceholderPojo.isCompleted(), actualData.isCompleted());
+        Assert.assertEquals(jsonplaceholderPojo.getUserId(), actualData.getUserId());
+
     }
 
 }

@@ -18,7 +18,7 @@ public class Q02_PostRequest_ResponseWithPojoClass extends RestfulBookerHerokuap
     "firstname" : "Hale",
     "lastname" : "Hale",
     "totalprice" : 250,
-    "depositpaid" : true,
+    "depositpaid" : false,
     "bookingdates" : {
         "checkin" : "2022-08-28",
         "checkout" : "2022-09-03"
@@ -34,13 +34,13 @@ public class Q02_PostRequest_ResponseWithPojoClass extends RestfulBookerHerokuap
 
     PostRequestBookingdatesPojo bookingdatesPojo= new PostRequestBookingdatesPojo("2022-08-28", "2022-09-03");
 
-    PostRequestPojo expectedData = new PostRequestPojo("Hale", "Hale", 250, true, bookingdatesPojo, "Breakfast");
+    PostRequestPojo expectedData = new PostRequestPojo("Hale", "Hale", 250, false, bookingdatesPojo, "Breakfast");
 
         Response response = given()
                 .contentType(ContentType.JSON)
                 .spec(spec01)
                 .auth().basic("admin", "password123")
-                .body(expectedData)
+                .body(expectedData.toString())
                 .when()
                 .post();
 
